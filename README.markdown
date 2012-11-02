@@ -8,8 +8,11 @@
 * load your virtualenv: `source githost-python/bin/activate`
 * clone githost project: `git clone git://github.com/williammizuta/githost.git`
 * download requirements: `cd githost && pip install -r requirements.txt`
+
+# Recommend Config Database
 * create a postgresql user named root without password
 * create a database named githost
+* Others configurations edit settings.py
 
 # Run server
 * load your virtualenv: `source githost-python/bin/activate`
