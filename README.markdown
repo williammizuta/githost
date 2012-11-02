@@ -12,7 +12,7 @@
 # Recommend Config Database
 * create a postgresql user named root without password
 * create a database named githost
-* Others configurations edit settings.py
+* Others configurations edit `settings.py`
 
 # Run server
 * load your virtualenv: `source githost-python/bin/activate`
