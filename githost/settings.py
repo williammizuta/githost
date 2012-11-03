@@ -1,5 +1,7 @@
 import os
 
+BASE_PATH = os.path.dirname(os.path.abspath(__file__))
+
 # Django settings for githost project.
 
 DEBUG = True
@@ -66,6 +68,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
+    os.path.join(BASE_PATH, 'static/css'),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -105,7 +108,7 @@ ROOT_URLCONF = 'githost.urls'
 WSGI_APPLICATION = 'githost.wsgi.application'
 
 TEMPLATE_DIRS = (
-    os.path.dirname(os.path.abspath(__file__)) + "/templates",
+    os.path.join(BASE_PATH, 'templates'),
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
