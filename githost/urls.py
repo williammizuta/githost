@@ -6,7 +6,7 @@ from django.conf.urls import patterns, url
 
 urlpatterns = patterns('githost.main.views',
     url(r'^$', 'home'),
-
+    url(r'^login$', 'login'),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

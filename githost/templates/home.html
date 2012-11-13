@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>GitHost</title>
-    <link href='/static/githost.css' rel='stylesheet'>
-    <link href='/static/reset.css' rel='stylesheet'>
-    <link href='http://fonts.googleapis.com/css?family=Delius' rel='stylesheet'>
-</head>
-<body>
-    <header class='header'>
-        <nav class="container">
-            <a class="project-title" href='/'>GitHost</a>
-            <a class='login' href="login">Log in</a>
-        </nav>
-    </header>
-</body>
-</html>
+{% extends "base.html" %}
+{% block header %}
+    <nav class="container">
+        <a class="project-title" href='/'>GitHost</a>
+        <a class='login' href="login">Log in</a>
+    </nav>
+{% endblock %}

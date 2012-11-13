@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>GitHost</title>
+    <link href='/static/githost.css' rel='stylesheet'>
+    <link href='/static/reset.css' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Delius' rel='stylesheet'>
+    {% block css %}{% endblock %}
+</head>
+<body>
+	<header class='header'>
+    	{% block header %}{% endblock %}
+	</header>
+	{% block body %}{% endblock %}
+</body>
+</html>
